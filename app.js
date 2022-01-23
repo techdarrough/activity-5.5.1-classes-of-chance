@@ -1,5 +1,6 @@
 class Casino {
     constructor(name, timesPlayed) {
+        this.name = name
         this.timesPlayed = 0
     }
     
@@ -7,6 +8,8 @@ class Casino {
 
         if (Math.random() <= 0.5) {
             console.log(this.name + ' wins')
+        } else {
+            console.log(`${this.name} wins ${betAmount}`)
         }
     }
 }
