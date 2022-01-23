@@ -10,7 +10,9 @@ class Casino {
         if (Math.random() <= 0.5) {
             console.log(this.casinoName + ' wins')
         } else {
-            console.log(`${this.playerName} wins ${betAmount}`)
+            console.log(`${this.playerName} bet ${betAmount}`)
+            console.log(`${this.playerName} wins ${betAmount * (this.timesPlayed + 1)}`)
+            this.timesPlayed++
         }
     }
 }
